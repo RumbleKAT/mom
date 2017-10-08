@@ -11,15 +11,8 @@ public class LoadData : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-
 		StartCoroutine ("LoadJSON");
-	
 	}
-
-	void Update(){
-		Display ();
-	}
-		
 		
 	IEnumerator LoadJSON (){
 		JsonData getData = JsonMapper.ToObject (jsonData.text);
@@ -87,6 +80,14 @@ public class LoadData : MonoBehaviour {
 		}
 
 
+	}
+
+	IEnumerator LoadDisplay(){
+		//Display jsonData
+
+		Display ();
+
+		yield return new WaitForSeconds (3f);
 	}
 }
 

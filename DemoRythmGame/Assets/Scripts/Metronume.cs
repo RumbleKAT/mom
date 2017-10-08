@@ -20,7 +20,7 @@ public class Metronume : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		StartMetronome();
+		//StartMetronome();
 	}
 
 	// Update is called once per frame
@@ -36,6 +36,10 @@ public class Metronume : MonoBehaviour {
 		interval = tmpInterval / multiplier;
 		nextTime = Time.time;
 		StartCoroutine("DoTick");
+	}
+
+	public void StopMetornume(){
+		StopCoroutine("DoTick");
 	}
 
 	IEnumerator DoTick()

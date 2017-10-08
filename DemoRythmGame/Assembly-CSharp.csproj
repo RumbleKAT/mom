@@ -52,13 +52,21 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\LoadData.cs" />
-     <Compile Include="Assets\Scripts\GM.cs" />
+     <Compile Include="Assets\NoteDetail.cs" />
+     <Compile Include="Assets\Scripts\CameraMove.cs" />
+     <Compile Include="Assets\Scripts\CreateNote.cs" />
+     <Compile Include="Assets\Scripts\GameTime.cs" />
      <Compile Include="Assets\Scripts\Metronume.cs" />
+     <Compile Include="Assets\Scripts\NextSequence.cs" />
      <Compile Include="Assets\Scripts\noteCtrl.cs" />
      <Compile Include="Assets\Scripts\NoteData.cs" />
      <Compile Include="Assets\Scripts\NoteInfo.cs" />
-     <Compile Include="Assets\Scripts\String1.cs" />
+     <Compile Include="Assets\Scripts\Observer.cs" />
+     <Compile Include="Assets\Scripts\PianoControl.cs" />
+     <Compile Include="Assets\Scripts\PlayNote.cs" />
      <Compile Include="Assets\XMLParser.cs" />
+     <None Include="Assets\Resources\school.xml" />
+     <None Include="Assets\Resources\two.xml" />
      <None Include="Assets\two.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
